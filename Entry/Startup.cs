@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Web;
 
 namespace Entry
 {
@@ -14,7 +15,8 @@ namespace Entry
     {
         public void ConfigureServices(IServiceCollection services)
         {
-
+            var assembly = typeof(HomeController).Assembly;
+            services.AddControllersWithViews().AddApplicationPart(assembly);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -28,10 +30,10 @@ namespace Entry
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}"
+                );
             });
         }
     }
