@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Web.Controllers;
 
 namespace Entry
@@ -10,8 +9,8 @@ namespace Entry
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            var assembly = typeof(HomeController).Assembly;
-            services.AddControllersWithViews().AddApplicationPart(assembly);
+            var assemblyWithControllersAndViews = typeof(HomeController).Assembly;
+            services.AddControllersWithViews().AddApplicationPart(assemblyWithControllersAndViews);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
