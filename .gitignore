@@ -1,3 +1,6 @@
 obj/
 bin/
 .vs/
+
+Web/.yarn/unplugged
+Web/.yarn/build-state.yml

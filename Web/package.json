@@ -1,0 +1,6 @@
+{
+  "name": "clean-architecture-template",
+  "dependencies": {
+    "webpack": "^4.41.6"
+  }
+}
