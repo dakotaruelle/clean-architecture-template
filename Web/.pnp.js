@@ -35,6 +35,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["pnp-webpack-plugin", "npm:1.6.4"],
+            ["ts-loader", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:6.2.1"],
+            ["typescript", "patch:typescript@npm%3A3.8.2#builtin<compat/typescript>::version=3.8.2&hash=273569"],
             ["webpack", "npm:4.41.6"],
             ["webpack-cli", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:3.3.11"]
           ],
@@ -640,6 +643,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["to-regex", "npm:3.0.2"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:3.0.2", {
+          "packageLocation": "./.yarn/cache/braces-npm-3.0.2-782240b28a-2.zip/node_modules/braces/",
+          "packageDependencies": [
+            ["braces", "npm:3.0.2"],
+            ["fill-range", "npm:7.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["brorand", [
@@ -908,6 +919,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["clean-architecture-template", "workspace:."],
+            ["pnp-webpack-plugin", "npm:1.6.4"],
+            ["ts-loader", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:6.2.1"],
+            ["typescript", "patch:typescript@npm%3A3.8.2#builtin<compat/typescript>::version=3.8.2&hash=273569"],
             ["webpack", "npm:4.41.6"],
             ["webpack-cli", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:3.3.11"]
           ],
@@ -1644,6 +1658,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["to-regex-range", "npm:2.1.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:7.0.1", {
+          "packageLocation": "./.yarn/cache/fill-range-npm-7.0.1-b8b1817caa-2.zip/node_modules/fill-range/",
+          "packageDependencies": [
+            ["fill-range", "npm:7.0.1"],
+            ["to-regex-range", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["find-cache-dir", [
@@ -2339,6 +2361,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["kind-of", "npm:3.2.2"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:7.0.0", {
+          "packageLocation": "./.yarn/cache/is-number-npm-7.0.0-060086935c-2.zip/node_modules/is-number/",
+          "packageDependencies": [
+            ["is-number", "npm:7.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["is-plain-object", [
@@ -2704,6 +2733,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["regex-not", "npm:1.0.2"],
             ["snapdragon", "npm:0.8.2"],
             ["to-regex", "npm:3.0.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.0.2", {
+          "packageLocation": "./.yarn/cache/micromatch-npm-4.0.2-f059c00e51-2.zip/node_modules/micromatch/",
+          "packageDependencies": [
+            ["micromatch", "npm:4.0.2"],
+            ["braces", "npm:3.0.2"],
+            ["picomatch", "npm:2.2.1"]
           ],
           "linkType": "HARD",
         }]
@@ -3393,6 +3431,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["picomatch", [
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/picomatch-npm-2.2.1-a4bfb8b1cc-2.zip/node_modules/picomatch/",
+          "packageDependencies": [
+            ["picomatch", "npm:2.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["pify", [
         ["npm:4.0.1", {
           "packageLocation": "./.yarn/cache/pify-npm-4.0.1-062756097b-2.zip/node_modules/pify/",
@@ -3408,6 +3455,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["pkg-dir", "npm:3.0.0"],
             ["find-up", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["pnp-webpack-plugin", [
+        ["npm:1.6.4", {
+          "packageLocation": "./.yarn/cache/pnp-webpack-plugin-npm-1.6.4-c497046afc-2.zip/node_modules/pnp-webpack-plugin/",
+          "packageDependencies": [
+            ["pnp-webpack-plugin", "npm:1.6.4"],
+            ["ts-pnp", "virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.1.6"]
           ],
           "linkType": "HARD",
         }]
@@ -3850,6 +3907,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/semver-npm-5.7.1-40bcea106b-2.zip/node_modules/semver/",
           "packageDependencies": [
             ["semver", "npm:5.7.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:6.3.0", {
+          "packageLocation": "./.yarn/cache/semver-npm-6.3.0-b3eace8bfd-2.zip/node_modules/semver/",
+          "packageDependencies": [
+            ["semver", "npm:6.3.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4340,6 +4404,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["repeat-string", "npm:1.6.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:5.0.1", {
+          "packageLocation": "./.yarn/cache/to-regex-range-npm-5.0.1-f1e8263b00-2.zip/node_modules/to-regex-range/",
+          "packageDependencies": [
+            ["to-regex-range", "npm:5.0.1"],
+            ["is-number", "npm:7.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["tough-cookie", [
@@ -4349,6 +4421,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tough-cookie", "npm:2.5.0"],
             ["psl", "npm:1.7.0"],
             ["punycode", "npm:2.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ts-loader", [
+        ["virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:6.2.1", {
+          "packageLocation": "./.yarn/$$virtual/ts-loader-virtual-2efa7e6380/0/cache/ts-loader-npm-6.2.1-268838f7fa-2.zip/node_modules/ts-loader/",
+          "packageDependencies": [
+            ["ts-loader", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:6.2.1"],
+            ["chalk", "npm:2.4.2"],
+            ["enhanced-resolve", "npm:4.1.1"],
+            ["loader-utils", "npm:1.4.0"],
+            ["micromatch", "npm:4.0.2"],
+            ["semver", "npm:6.3.0"],
+            ["typescript", "patch:typescript@npm%3A3.8.2#builtin<compat/typescript>::version=3.8.2&hash=273569"]
+          ],
+          "packagePeers": [
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ts-pnp", [
+        ["virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.1.6", {
+          "packageLocation": "./.yarn/$$virtual/ts-pnp-virtual-cbd245a0f8/0/cache/ts-pnp-npm-1.1.6-cc542a3af4-2.zip/node_modules/ts-pnp/",
+          "packageDependencies": [
+            ["ts-pnp", "virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.1.6"],
+            ["typescript", null]
+          ],
+          "packagePeers": [
+            "typescript"
           ],
           "linkType": "HARD",
         }]
@@ -4395,6 +4498,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typedarray-npm-0.0.6-37638b2241-2.zip/node_modules/typedarray/",
           "packageDependencies": [
             ["typedarray", "npm:0.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["typescript", [
+        ["patch:typescript@npm%3A3.8.2#builtin<compat/typescript>::version=3.8.2&hash=273569", {
+          "packageLocation": "./.yarn/cache/typescript-patch-1ceaabebb8-2.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A3.8.2#builtin<compat/typescript>::version=3.8.2&hash=273569"]
           ],
           "linkType": "HARD",
         }]
