@@ -4,3 +4,4 @@ bin/
 
 Web/.yarn/unplugged
 Web/.yarn/build-state.yml
+Web/wwwroot/js

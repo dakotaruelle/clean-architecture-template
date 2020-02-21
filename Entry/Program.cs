@@ -11,8 +11,10 @@ namespace Entry
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(webBuilder =>
+            Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.UseWebRoot("../Web/wwwroot");
                     webBuilder.UseStartup<Startup>();
                 }
             );
