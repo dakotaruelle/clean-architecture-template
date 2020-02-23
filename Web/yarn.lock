@@ -4,6 +4,26 @@
 __metadata:
   version: 4
 
+"@types/vue@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@types/vue@npm:2.0.0"
+  dependencies:
+    vue: "*"
+  checksum: 2/9a02e919e441d173749ccc1a9bed8b5152aaee9f6d10e23e49f091e44d10d2f96c62236c40d5ba037b7000e61a66c5f587167aeb121b9ebd9f63b21110d63a6d
+  languageName: node
+  linkType: hard
+
+"@vue/composition-api@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@vue/composition-api@npm:0.4.0"
+  dependencies:
+    tslib: ^1.9.3
+  peerDependencies:
+    vue: ^2.5.22
+  checksum: 2/341bf854a8dd7b11b42ba6b95ecbb67e2b8fc9a34ec7c3eb22f4b01e580ae782375f9ada25df230e9e6f91d4cf19a45d06deae6462f5557f30b6133d75ab3605
+  languageName: node
+  linkType: hard
+
 "@webassemblyjs/ast@npm:1.8.5":
   version: 1.8.5
   resolution: "@webassemblyjs/ast@npm:1.8.5"
@@ -757,9 +777,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "clean-architecture-template@workspace:."
   dependencies:
+    "@types/vue": ^2.0.0
+    "@vue/composition-api": ^0.4.0
     pnp-webpack-plugin: ^1.6.4
     ts-loader: ^6.2.1
     typescript: ^3.8.2
+    vue: ^2.6.11
     webpack: ^4.41.6
     webpack-cli: ^3.3.11
   languageName: unknown
@@ -3923,7 +3946,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1.9.0":
+"tslib@npm:^1.9.0, tslib@npm:^1.9.3":
   version: 1.11.0
   resolution: "tslib@npm:1.11.0"
   checksum: 2/fa014c310808080e07b14d33aa52a3c8c8038f25fd7164a8e7d038fd6f2ca767b5a9305c77147d7d59ccd93bdf7a461a3c1d7ae53dfaca43501a2623834def97
@@ -4116,6 +4139,13 @@ typescript@^3.8.2:
   version: 1.1.2
   resolution: "vm-browserify@npm:1.1.2"
   checksum: 2/fc571a62d2cf797ae8773ebb3cb0d2bea50ed02059e128dd9087975929fce4c80a6485ce1aaf7d44ef69db99dfdcde50b6be5d5eb73b296660d761c32fb544fe
+  languageName: node
+  linkType: hard
+
+"vue@npm:*, vue@npm:^2.6.11":
+  version: 2.6.11
+  resolution: "vue@npm:2.6.11"
+  checksum: 2/ba12fa9632c3fa4e46eec0fffeb6ec03fae6eb999bf502628e0e1c4312a3f5ed62e34378b80a4f21c00fe20d772435f56e87f7c0ee761b47cb2999fb6f7fb722
   languageName: node
   linkType: hard
 

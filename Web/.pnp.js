@@ -35,13 +35,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@types/vue", "npm:2.0.0"],
+            ["@vue/composition-api", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:0.4.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["ts-loader", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:6.2.1"],
             ["typescript", "patch:typescript@npm%3A3.8.2#builtin<compat/typescript>::version=3.8.2&hash=273569"],
+            ["vue", "npm:2.6.11"],
             ["webpack", "npm:4.41.6"],
             ["webpack-cli", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:3.3.11"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["@types/vue", [
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/@types-vue-npm-2.0.0-f610479937-2.zip/node_modules/@types/vue/",
+          "packageDependencies": [
+            ["@types/vue", "npm:2.0.0"],
+            ["vue", "npm:2.6.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vue/composition-api", [
+        ["virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:0.4.0", {
+          "packageLocation": "./.yarn/$$virtual/@vue-composition-api-virtual-397e5b08c0/0/cache/@vue-composition-api-npm-0.4.0-73040cfe75-2.zip/node_modules/@vue/composition-api/",
+          "packageDependencies": [
+            ["@vue/composition-api", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:0.4.0"],
+            ["tslib", "npm:1.11.0"],
+            ["vue", "npm:2.6.11"]
+          ],
+          "packagePeers": [
+            "vue"
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@webassemblyjs/ast", [
@@ -919,9 +946,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["clean-architecture-template", "workspace:."],
+            ["@types/vue", "npm:2.0.0"],
+            ["@vue/composition-api", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:0.4.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["ts-loader", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:6.2.1"],
             ["typescript", "patch:typescript@npm%3A3.8.2#builtin<compat/typescript>::version=3.8.2&hash=273569"],
+            ["vue", "npm:2.6.11"],
             ["webpack", "npm:4.41.6"],
             ["webpack-cli", "virtual:8f76316b00315873c2f998aa546b4b5e6e7e0c01685147503721f982266e560dafa161b164986f3793b347048ab20a5d969d2a77b89fd33f50d5ebd81b9e1186#npm:3.3.11"]
           ],
@@ -4665,6 +4695,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/vm-browserify-npm-1.1.2-f96404b36f-2.zip/node_modules/vm-browserify/",
           "packageDependencies": [
             ["vm-browserify", "npm:1.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["vue", [
+        ["npm:2.6.11", {
+          "packageLocation": "./.yarn/cache/vue-npm-2.6.11-e997ef2640-2.zip/node_modules/vue/",
+          "packageDependencies": [
+            ["vue", "npm:2.6.11"]
           ],
           "linkType": "HARD",
         }]

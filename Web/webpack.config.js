@@ -4,7 +4,7 @@ const pnpWebpackPlugin = require('pnp-webpack-plugin');
 
 module.exports = {
     entry: './Client/index.ts',
-    
+
     output: {
         path: path.resolve(__dirname, 'wwwroot/js'),
         filename: 'index.min.js'
@@ -25,6 +25,10 @@ module.exports = {
         plugins: [
             pnpWebpackPlugin,
         ],
+
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
     },
 
     resolveLoader: {

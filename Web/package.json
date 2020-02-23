@@ -4,10 +4,15 @@
     "build": "webpack"
   },
   "devDependencies": {
+    "@types/vue": "^2.0.0",
     "pnp-webpack-plugin": "^1.6.4",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.2",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^0.4.0",
+    "vue": "^2.6.11"
   }
 }
