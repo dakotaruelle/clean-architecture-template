@@ -1,0 +1,3 @@
+{
+    "typescript.tsdk": "./Web/.vscode/pnpify/typescript/lib"
+}

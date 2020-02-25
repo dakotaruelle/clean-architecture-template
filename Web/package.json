@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@vue/composition-api": "^0.4.0",
+    "@yarnpkg/pnpify": "^2.0.0-rc.18",
     "vue": "^2.6.11"
   }
 }
