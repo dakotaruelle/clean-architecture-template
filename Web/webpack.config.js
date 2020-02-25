@@ -25,10 +25,6 @@ module.exports = {
         plugins: [
             pnpWebpackPlugin,
         ],
-
-        alias: {
-            'vue$': 'vue/dist/vue.esm.js'
-        }
     },
 
     resolveLoader: {

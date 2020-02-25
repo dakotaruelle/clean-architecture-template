@@ -14,5 +14,9 @@ new Vue({
         return {
             message: 'Hello from Vue'
         }
+    },
+
+    render(createElement) {
+        return createElement('div', this.message);
     }
 });
