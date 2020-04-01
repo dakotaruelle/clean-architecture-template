@@ -1,22 +1,20 @@
 import Vue from 'vue';
-import { defineComponent } from '@vue/composition-api';
+import VueCompositionApi, { ref } from '@vue/composition-api';
 
-const value: number = 5;
-const message: string = `Hello from typescript, value is ${value}`
+Vue.use(VueCompositionApi);
 
-const appNode: HTMLElement = document.getElementById('app') as HTMLElement;
-//appNode.textContent = message;
-
-new Vue({
-    el: '#app',
-
-    data() {
+const MyComponent = {
+    setup(props) {
+        const message = ref('Hello');
+    
         return {
-            message: 'Hello from Vue'
+          message
         }
     },
 
-    render(createElement) {
-        return createElement('div', this.message);
-    }
-});
+    template: '<div>{{ message }}</div>'
+}
+
+new Vue({
+    render: createElement => createElement(MyComponent),
+}).$mount('#app');
