@@ -17,6 +17,11 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 loader: "ts-loader"
+            },
+
+            {
+                test: /\.vue$/,
+                loader: "vue-loader"
             }
         ]
     },
@@ -25,6 +30,10 @@ module.exports = {
         plugins: [
             pnpWebpackPlugin,
         ],
+
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js',
+        },
     },
 
     resolveLoader: {
